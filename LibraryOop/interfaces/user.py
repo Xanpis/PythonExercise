@@ -1,12 +1,13 @@
 
 from abc import ABC, abstractmethod
-from LibraryOop.classes.book import Book
+from classes.book import Book
 
 class User(ABC):
     def __init__(self, name: str, age: int, books=None):
         self.name = name
-        self.ege = age
-        self._books = []
+        self.age = age
+        self.id = 0
+        self.books = []
 
     # shows the books taken by the user
     @abstractmethod

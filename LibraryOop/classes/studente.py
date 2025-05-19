@@ -1,5 +1,5 @@
-from LibraryOop.classes.book import Book
-from LibraryOop.interfaces.user import User
+from classes.book import Book
+from interfaces.user import User
 
 class Student(User):
     def __init__(self, name: str, age: int, books=None):
@@ -9,4 +9,7 @@ class Student(User):
         return self._books
     
     def add_books(self, book: Book) -> bool:
+        return True
+    
+    def remove_book(self, position: int) -> bool:
         return True
