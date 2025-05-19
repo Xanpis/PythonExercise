@@ -6,7 +6,7 @@ class Student(User):
         super().__init__(name, age, books)
 
     def show_books(self) -> list:
-        return self._books
+        return self.books
     
     def add_books(self, book: Book) -> bool:
         return True
