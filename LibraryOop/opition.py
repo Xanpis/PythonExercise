@@ -7,6 +7,6 @@ first_opition ="""
 user_opition ="""
 1 = New studente
 2 = New Professor
-3 = Sair
+3 = Exit
 """
 

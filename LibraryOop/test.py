@@ -1,33 +1,34 @@
-    # # Add book in book list of the student max 1 book
-    # def add_books(self, book: Book) -> bool:
-    #     # validate if is stance of book
-    #     self._is_stance_book(book)
-    #     # validate book to add in list of sudante
-    #     self._validate_book_to_add_student(
-    #         book,self._books, self.name
-    #     )
+class Stu:
+    def __init__(self) -> None:
+        self.id = 0
 
-    #     # Add book to list
-    #     self._books.append(book)
-    #     book.status = False
-    #     return True
+list_stu = []
 
-    # def remove_book(self, position: int) -> bool:
-    #     # Validate book to remove
-    #     self._validate_to_remove(
-    #         position, self._books
-    #     )
-
-    #     # Remove book
-    #     self._books[position].status = True
-    #     self._books.pop(position)
-    #     return True
-
-    # def show_books(self):
-    #     return 
+def add_id(list_id):
+    lis_fil = [i.id for i in list_id]
+    var = 1
+    if lis_fil:
+        for i in lis_fil:
+            if i in lis_fil:
+                var = i + 1
+    return var
 
 
-p = input('velue = ').lower()
+for i in range(5):
+    i1 = Stu()
+    i1.id = add_id(list_stu)
+    list_stu.append(i1)
+    
+list_stu.pop(2)
+list_stu.pop(0)
 
-if not p.isalpha():
-    print(p)
+lis_fil = [i.id for i in list_stu]
+print(lis_fil)
+
+i1 = Stu()
+i1.id = add_id(list_stu)
+list_stu.append(i1)
+
+lis_fil = [i.id for i in list_stu]
+print(lis_fil)
+
